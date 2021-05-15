@@ -1,0 +1,63 @@
+// Font
+// ======================================
+
+@mixin fontVariation($color, $font-size, $font-weight: $font-weight-normal) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+// Mobile breakpoints
+// ======================================
+
+@mixin small-phone {
+  @media only screen and (min-width: $breakpoint-sm * 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $breakpoint-md * 1px) {
+    @content;
+  }
+}
+@mixin large {
+  @media only screen and (min-width: $breakpoint-lg * 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $breakpoint-xl * 1px) {
+    @content;
+  }
+}
+
+// Flex
+// ======================================
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  @include fontVariation($color-black, $font-size-base);
+
+  // Font Family & Line height excluded from mixing [fontVariation] since it'll be the same across app
+  font-family: $font-main;
+  line-height: $line-height-base;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,45 @@
+// Fonts Imports
+// ======================================
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+// Variables
+// ======================================
+
+// Base
+$base-em: rem(16) !default;
+$font-size-base: $base-em;
+
+$line-height-base: 1.5;
+$line-height-hx: 1.25;
+
+// Fonts
+$font-main: "Montserrat", sans-serif;
+
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+
+// Colors
+$color-yellow: #ffe600;
+$color-black: #333333;
+$color-gray: #666666;
+$color-gray-light: #999999;
+$color-gray-lighter: #eeeeee;
+$color-blue: #3483fa;
+
+$color-main: $color-yellow;
+$color-secondary: $color-blue;
+
+$color-link: $color-blue;
+
+// Breakpoints
+$breakpoint-sm: 576;
+$breakpoint-md: 768;
+$breakpoint-lg: 992;
+$breakpoint-xl: 1200;
+
+// Grid and Layout
+$grid-cols: 12;
+$container-width: rem($breakpoint-xl);
+$gutter-container: rem(16);
+$gutter: rem(16);
