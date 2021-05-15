@@ -1,10 +1,11 @@
 import React from 'react';
+import Home from './pages/Home';
 import './styles/main.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header" />
+    <div className="meli">
+      <Home />
     </div>
   );
 }

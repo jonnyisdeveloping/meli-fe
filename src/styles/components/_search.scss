@@ -1,0 +1,40 @@
+.search-bar {
+  background: $color-white;
+
+  border-radius: rem(2);
+
+  overflow: hidden;
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    @include fontVariation($color-dark, $font-size-18);
+    line-height: $line-height-30;
+
+    flex: 1;
+
+    padding: rem(4) rem(12);
+
+    border: 0;
+
+    outline: none;
+
+    &::placeholder {
+      color: $color-gray-light;
+    }
+  }
+
+  &__button {
+    @include flex-center;
+
+    background-color: $color-gray-lighter;
+
+    border: 0;
+
+    min-width: rem(42);
+
+    cursor: pointer;
+  }
+}

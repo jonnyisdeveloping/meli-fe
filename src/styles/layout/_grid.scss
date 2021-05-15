@@ -51,7 +51,8 @@ $map-grid-props: (
 .container {
   margin: 0 auto;
 
-  max-width: $breakpoint-xl * 1px;
+  width: $breakpoint-xl * 1px;
+  max-width: 100%;
 
   &--fluid {
     margin: 0;

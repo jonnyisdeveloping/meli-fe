@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @include fontVariation($color-black, $font-size-base);
+  @include fontVariation($color-dark, $font-size-base);
 
   // Font Family & Line height excluded from mixing [fontVariation] since it'll be the same across app
   font-family: $font-main;

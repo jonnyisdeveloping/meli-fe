@@ -1,0 +1,13 @@
+.meli {
+  &__home {
+    @include flex-center;
+    background-color: $color-main;
+
+    width: 100vw;
+    height: 100vh;
+
+    .header {
+      width: 100%;
+    }
+  }
+}
