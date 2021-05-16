@@ -1,0 +1,30 @@
+.product-card {
+  &__container {
+    display: flex;
+
+    border-bottom: rem(1) solid $color-gray-lighter;
+  }
+
+  &__picture {
+    display: block;
+
+    border-radius: rem(4);
+
+    &-container {
+      width: rem(180);
+    }
+  }
+
+  &__price {
+    font-size: $font-size-24;
+  }
+
+  &__title {
+    font-size: $font-size-18;
+  }
+
+  &__city {
+    color: $color-gray-light;
+    font-size: $font-size-12;
+  }
+}

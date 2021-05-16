@@ -1,9 +1,9 @@
 $map-grid-props: (
-  "": 0,
-  "-sm": $breakpoint-sm,
-  "-md": $breakpoint-md,
-  "-lg": $breakpoint-lg,
-  "-xl": $breakpoint-xl,
+  '': 0,
+  '-sm': $breakpoint-sm,
+  '-md': $breakpoint-md,
+  '-lg': $breakpoint-lg,
+  '-xl': $breakpoint-xl,
 );
 
 @mixin create-mq($breakpoint, $min-or-max) {
@@ -17,7 +17,7 @@ $map-grid-props: (
 }
 
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
-  @include create-mq($breakpoint, "min") {
+  @include create-mq($breakpoint, 'min') {
     .col#{$modifier}-offset-0 {
       margin-left: 0;
     }
@@ -33,15 +33,15 @@ $map-grid-props: (
 }
 
 @each $modifier, $breakpoint in $map-grid-props {
-  @if ($modifier == "") {
-    $modifier: "-xs";
+  @if ($modifier == '') {
+    $modifier: '-xs';
   }
-  @include create-mq($breakpoint - 1, "max") {
+  @include create-mq($breakpoint - 1, 'max') {
     .hidden#{$modifier}-down {
       display: none !important;
     }
   }
-  @include create-mq($breakpoint, "min") {
+  @include create-mq($breakpoint, 'min') {
     .hidden#{$modifier}-up {
       display: none !important;
     }
@@ -54,11 +54,6 @@ $map-grid-props: (
   width: $breakpoint-xl * 1px;
   max-width: 100%;
 
-  &--fluid {
-    margin: 0;
-
-    max-width: 100%;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -70,6 +65,16 @@ $map-grid-props: (
   .col {
     padding-left: $gutter;
     padding-right: $gutter;
+  }
+
+  &--fluid {
+    margin: 0;
+
+    width: 100%;
+
+    .row {
+      margin: 0 auto;
+    }
   }
 
   @each $modifier, $breakpoint in $map-grid-props {

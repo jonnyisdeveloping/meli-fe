@@ -1,0 +1,9 @@
+.content {
+  &__container {
+    background-color: $color-white;
+
+    border-radius: rem(2);
+
+    box-shadow: $box-shadow;
+  }
+}

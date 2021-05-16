@@ -1,19 +1,22 @@
 // Helpers
-@import "helpers/functions";
-@import "helpers/variables";
-@import "helpers/mixins";
+@import 'helpers/functions';
+@import 'helpers/variables';
+@import 'helpers/mixins';
 
 // Base
-@import "base/normalize";
-@import "base/base";
+@import 'base/normalize';
+@import 'base/base';
 
 // Layout
-@import "layout/grid";
-@import "layout/header";
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/content';
 
 // Components
-@import "components/logo";
-@import "components/search";
+@import 'components/logo';
+@import 'components/search';
+@import 'components/productCard';
 
 // Pages
-@import "pages/home";
+@import 'pages/home';
+@import 'pages/searchResults';

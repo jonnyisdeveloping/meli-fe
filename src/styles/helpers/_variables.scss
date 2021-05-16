@@ -9,7 +9,7 @@ $line-height-base: 1.5;
 $line-height-hx: 1.25;
 
 // Fonts
-$font-main: "Montserrat", sans-serif;
+$font-main: 'Montserrat', sans-serif;
 
 $font-weight-normal: 400;
 $font-weight-semibold: 600;
@@ -48,6 +48,12 @@ $breakpoint-xl: 1200;
 
 // Grid and Layout
 $grid-cols: 12;
+$gutter-sm: rem(8);
+$gutter-md: rem(16);
+$gutter-lg: rem(32);
 $container-width: rem($breakpoint-xl);
-$gutter-container: rem(16);
-$gutter: rem(8);
+$gutter-container: $gutter-md;
+$gutter: $gutter-sm;
+
+// Box Shadows
+$box-shadow: 0 rem(1) rem(1) 0 rgba(0, 0, 0, 0.1);

@@ -3,6 +3,9 @@
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
   "files.autoSave": "onFocusChange",
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
   "[javascriptreact]": {
     "editor.formatOnSave": false
   }

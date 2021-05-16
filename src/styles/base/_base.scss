@@ -8,10 +8,62 @@ body {
   // Font Family & Line height excluded from mixing [fontVariation] since it'll be the same across app
   font-family: $font-main;
   line-height: $line-height-base;
+
+  background-color: $color-gray-lighter;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $gutter-md;
+}
+
+.m-md {
+  margin: $gutter-md;
+}
+
+.mb-md {
+  margin-bottom: $gutter-md;
+}
+
+.mt-md {
+  margin-top: $gutter-md;
+}
+
+.ml-md {
+  margin-left: $gutter-md;
+}
+
+.mr-md {
+  margin-right: $gutter-md;
+}
+
+.mb-md {
+  margin-bottom: $gutter-md;
+}
+
+.mb-lg {
+  margin-bottom: $gutter-lg;
+}
+
+.p-md {
+  padding: $gutter-md;
+}
+
+.pb-md {
+  padding-bottom: $gutter-md;
+}
+.pb0-md {
+  padding-bottom: 0;
 }
