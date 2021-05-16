@@ -1,0 +1,10 @@
+.breadcrumbs {
+  &__list {
+    color: $color-gray-light;
+    font-size: $font-size-14;
+  }
+
+  &__active {
+    font-weight: $font-weight-semibold;
+  }
+}

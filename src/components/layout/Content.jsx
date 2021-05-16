@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Content = ({ children, containerClass }) => {
   return (
-    <div className="content">
+    <div className="content mb-lg">
       <div className="container">
         <div className="row">
           <div className="col col-10 col-offset-1">
