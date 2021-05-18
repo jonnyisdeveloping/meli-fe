@@ -23,6 +23,11 @@
     font-size: $font-size-18;
   }
 
+  &__title-link {
+    color: $color-dark;
+    text-decoration: none;
+  }
+
   &__city {
     color: $color-gray;
     font-size: $font-size-12;

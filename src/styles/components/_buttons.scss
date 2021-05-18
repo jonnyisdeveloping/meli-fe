@@ -1,0 +1,22 @@
+.btn {
+  border: 0;
+  border-radius: rem(4);
+
+  padding: rem(12);
+
+  min-width: rem(250);
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease-in;
+
+  &--primary {
+    color: $color-white;
+
+    background-color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue-dark;
+    }
+  }
+}

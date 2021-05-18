@@ -29,6 +29,11 @@ h6 {
   margin-bottom: $gutter-md;
 }
 
+img {
+  max-width: 100%;
+}
+
+// Margins - medium
 .m-md {
   margin: $gutter-md;
 }
@@ -53,6 +58,7 @@ h6 {
   margin-bottom: $gutter-lg;
 }
 
+// Paddings - medium
 .p-md {
   padding: $gutter-md;
 }
@@ -60,6 +66,12 @@ h6 {
 .pb-md {
   padding-bottom: $gutter-md;
 }
+
 .pb0-md {
   padding-bottom: 0;
+}
+
+// Paddings - large
+.p-lg {
+  padding: $gutter-lg;
 }

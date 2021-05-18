@@ -1,19 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const ProductCard = (props) => {
-  const { title, picture, price, freeShipping, city } = props;
+  const { id, title, picture, price, freeShipping, city } = props;
   return (
     <div className="product-card p-md pb0-md">
       <div className="product-card__container pb-md">
         <div className="container--fluid">
           <div className="row">
             <div className="product-card__picture-container mr-md">
-              <img
-                className="product-card__picture"
-                src={picture}
-                alt={title}
-              />
+              <Link to={`/items/${id}`}>
+                <img
+                  className="product-card__picture"
+                  src={picture}
+                  alt={title}
+                />
+              </Link>
             </div>
             <div className="product-card__content col col-5">
               <div className="mt-md mb-lg">
@@ -29,7 +32,9 @@ const ProductCard = (props) => {
                 )}
               </div>
 
-              <h2 className="product-card__title">{title}</h2>
+              <Link className="product-card__title-link" to={`/items/${id}`}>
+                <h2 className="product-card__title">{title}</h2>
+              </Link>
             </div>
             <div className="mt-md col col-offset-1">
               <span className="product-card__city">{city}</span>
@@ -42,6 +47,7 @@ const ProductCard = (props) => {
 };
 
 ProductCard.propTypes = {
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,

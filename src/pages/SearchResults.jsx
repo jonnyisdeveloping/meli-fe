@@ -68,6 +68,7 @@ const SearchResults = () => {
         <div className="content">
           {Products.map((product) => (
             <ProductCard
+              id={product.id}
               title={product.title}
               picture={product.picture}
               price={product.price.amount}
