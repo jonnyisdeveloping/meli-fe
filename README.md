@@ -2,6 +2,11 @@
 
 Hi, this is Jonny Acevedo react & node app for meli front end position test.
 
+Here is a video of the app working:
+
+https://user-images.githubusercontent.com/47162791/118756087-c6032280-b82f-11eb-8b77-9aaea9cf63e9.mp4
+
+
 ## Functional Challenges:
 
 1. En la vista de caja de búsqueda, debería poder ingresar el producto a buscar y al enviar el formulario navegar a la vista de Resultados de búsqueda, visualizando solo 4 productos. Luego, al hacer clic sobre uno de ellos, debería navegar a la vista de Detalle de Producto.:
@@ -21,7 +26,10 @@ later do:
 
 Project is using `npm-run-all`, so, you don't have to worry about starting backend node js server and then react app, just running `npm start` is going to start both of them sequently.
 
-Open `http://localhost:3000/` to see react app
+Open http://localhost:3000/ to see react app
+
+
+
 
 ## Back end, Nodejs server
 
@@ -93,4 +101,4 @@ Node js app server is located under `/server`, server will start right away on `
 }
 ```
 
-Feedback is much appreciated, and there are things to improve, but, this is what I was able to came with in the giving time.
+Feedback is much appreciated, and there are things to improve, but, this is what I was able to come with in the giving time.
