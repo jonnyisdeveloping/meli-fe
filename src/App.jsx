@@ -3,7 +3,6 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import SearchResults from './pages/SearchResults';
-import './styles/main.scss';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
