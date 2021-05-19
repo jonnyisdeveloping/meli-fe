@@ -101,4 +101,4 @@ Node js app server is located under `/server`, server will start right away on `
 }
 ```
 
-Feedback is much appreciated, and there are things to improve, but, this is what I was able to came with in the giving time.
+Feedback is much appreciated, and there are things to improve, but, this is what I was able to c0me with in the giving time.
