@@ -1,7 +1,13 @@
 .breadcrumbs {
   &__list {
-    color: $color-gray-light;
     font-size: $font-size-14;
+
+    min-height: rem(18);
+  }
+
+  &__link {
+    color: $color-gray-light;
+    text-decoration: none;
   }
 
   &__active {

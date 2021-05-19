@@ -2,8 +2,18 @@
   & &__info {
     padding-left: $gutter-lg;
   }
-  &__product-image {
+
+  &__image-container {
+    text-align: center;
+
     margin-bottom: rem(128);
+
+    width: rem(630);
+  }
+
+  &__product-image {
+    min-width: 100%;
+    max-height: rem(630);
   }
 
   &__product-status {
@@ -25,10 +35,17 @@
   }
 
   &__desc-title {
+    display: block;
+
     font-size: $font-size-28;
+    font-weight: $font-weight-semibold;
+
+    margin-bottom: $gutter-lg;
   }
 
   &__desc-txt {
-    color: $color-gray-light;
+    color: $color-gray;
+
+    word-break: break-all;
   }
 }

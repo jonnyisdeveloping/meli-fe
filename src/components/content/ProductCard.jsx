@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { thousandSeparator } from '../../utils/utils';
 
 const ProductCard = (props) => {
   const { id, title, picture, price, freeShipping, city } = props;
@@ -9,8 +10,11 @@ const ProductCard = (props) => {
       <div className="product-card__container pb-md">
         <div className="container--fluid">
           <div className="row">
-            <div className="product-card__picture-container mr-md">
-              <Link to={`/items/${id}`}>
+            <div className="mr-md">
+              <Link
+                className="product-card__picture-container"
+                to={`/items/${id}`}
+              >
                 <img
                   className="product-card__picture"
                   src={picture}
@@ -20,7 +24,9 @@ const ProductCard = (props) => {
             </div>
             <div className="product-card__content col col-5">
               <div className="mt-md mb-lg">
-                <span className="product-card__price">${price}</span>
+                <span className="product-card__price">
+                  $ {thousandSeparator(price)}
+                </span>
                 {freeShipping && (
                   <img
                     className="product-card__free-shipping ml-md"
@@ -47,10 +53,10 @@ const ProductCard = (props) => {
 };
 
 ProductCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
   freeShipping: PropTypes.bool.isRequired,
   city: PropTypes.string.isRequired,
 };

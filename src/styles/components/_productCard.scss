@@ -6,12 +6,18 @@
   }
 
   &__picture {
-    display: block;
+    display: inline-block;
 
     border-radius: rem(4);
 
+    width: 100%;
+    max-height: 180px;
+
     &-container {
+      @include flex-center;
+
       width: rem(180);
+      height: rem(180);
     }
   }
 

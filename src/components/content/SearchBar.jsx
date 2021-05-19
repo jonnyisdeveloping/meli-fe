@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import getQueryString from '../../helpers/helpers';
+import { getQueryString } from '../../utils/utils';
 
 function SearchBar({ history }) {
+  const queryValue = getQueryString('search');
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    const queryValue = getQueryString('search');
     if (queryValue) {
       setSearchQuery(queryValue);
     }
-  }, []);
+  }, [queryValue]);
 
   const onSearchQueryChange = (value) => {
     setSearchQuery(value);
