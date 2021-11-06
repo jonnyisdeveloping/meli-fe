@@ -1,6 +1,6 @@
-# Meli Front end test app
+# Meli Front end app
 
-Hi, this is Jonny Acevedo react & node app for meli front end position test.
+Hi, this is a react & node meli clone app.
 
 Here is a video of the app working:
 
@@ -101,4 +101,3 @@ Node js app server is located under `/server`, server will start right away on `
 }
 ```
 
-Feedback is much appreciated, and there are things to improve, but, this is what I was able to come with in the giving time.
